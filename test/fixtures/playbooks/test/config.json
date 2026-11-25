@@ -1,0 +1,11 @@
+{
+  "repo": "set by test/helpers.mjs to a temp repo",
+  "baseBranch": "main",
+  "linearWorkspaceUrl": "https://linear.app/example-workspace",
+  "permissionMode": "auto",
+  "models": { "opus": "claude-opus-5-5", "sonnet": "claude-sonnet-5-5", "haiku": "claude-haiku-5-5" },
+  "defaults": {
+    "initiative": ["opus", "high"], "project": ["opus", "high"], "hygiene": ["sonnet", "medium"],
+    "build": ["opus", "high"], "review": ["sonnet", "high"], "qa": ["haiku", "low"]
+  }
+}

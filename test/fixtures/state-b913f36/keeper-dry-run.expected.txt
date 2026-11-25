@@ -1,0 +1,6 @@
+(dry run) c7030d7e: pinned
+(dry run) f98adc3d ((I)·Demo initiative I-1): down, starting it again
+(dry run) p-demo-1: would git fetch origin main (skipped in a dry run; using the last fetched refs)
+(dry run) p-demo-1: clean and pushed; would claude rm 310a95e6, delete worktree-p-demo-1 if merged into origin/main, set cleanedAt
+(dry run) p-demo-2: branch dev/demo-2 merged into origin/main; would delete it; would update branchesLeft
+(dry run) ORPHAN (P) I-1·First project P-DEMO-1: I-1·P-DEMO-1·DEMO-1 First issue

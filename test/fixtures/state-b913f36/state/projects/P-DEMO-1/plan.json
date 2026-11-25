@@ -1,0 +1,18 @@
+{
+  "project": "P-DEMO-1",
+  "release": "self",
+  "issues": [
+    {
+      "id": "DEMO-1",
+      "title": "First issue",
+      "build": {},
+      "review": "skip",
+      "qa": "skip",
+      "merge": "self",
+      "waits": [
+        "DEMO-0 merged"
+      ],
+      "notes": "Keep it small."
+    }
+  ]
+}

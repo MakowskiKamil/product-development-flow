@@ -1,0 +1,12 @@
+{
+  "template": true,
+  "repo": "~/src/your-repo",
+  "baseBranch": "main",
+  "linearWorkspaceUrl": "https://linear.app/your-workspace",
+  "permissionMode": "auto",
+  "models": { "fable": "claude-fable-5-2", "opus": "claude-opus-5-5", "sonnet": "claude-sonnet-5-5", "haiku": "claude-haiku-5-5" },
+  "defaults": {
+    "initiative": ["opus", "high"], "project": ["opus", "high"], "hygiene": ["opus", "high"],
+    "build": ["opus", "high"], "review": ["opus", "high"], "qa": ["opus", "high"]
+  }
+}

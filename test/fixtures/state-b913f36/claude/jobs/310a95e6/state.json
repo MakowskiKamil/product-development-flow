@@ -1,0 +1,27 @@
+{
+  "state": "working",
+  "name": "(P) I-1·First project P-DEMO-1",
+  "sessionId": "38acaacb-b429-4d08-baf7-b37292a70899",
+  "cwd": "__ROOT__/repo",
+  "worktreePath": "__ROOT__/repo/.claude/worktrees/p-demo-1",
+  "worktreeBranch": "worktree-p-demo-1",
+  "respawnFlags": [
+    "--bg",
+    "-w",
+    "p-demo-1",
+    "-n",
+    "(P) I-1·First project P-DEMO-1",
+    "--remote-control",
+    "(P) I-1·First project P-DEMO-1",
+    "--permission-mode",
+    "auto",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "high",
+    "--append-system-prompt",
+    "1. You are `(P) I-1·First project P-DEMO-1`, role `project`, for `I-1 › P-DEMO-1`.\n2. Read your card at `__ROOT__/state/sessions/p-demo-1/card.md` before anything else; re-read it after a compaction and whenever a message starts `Card updated:`.\n3. Ask the owner in your own conversation, and send a push notification `I-1 › P-DEMO-1: <one line>` with every question. A project session may send FYI to its initiative session.\n4. Answer a child by `SendMessage` to its name. After `flow note`, `flow plan` or `flow refresh`, send `Card updated: <one line>` to each name it printed.",
+    "Read your card at __ROOT__/state/sessions/p-demo-1/card.md and begin."
+  ],
+  "createdAt": "2026-11-21T11:24:57.602Z"
+}

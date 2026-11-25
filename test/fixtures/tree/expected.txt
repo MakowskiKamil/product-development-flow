@@ -1,0 +1,18 @@
+I-9 Imports and feeds
+  (I)·Imports and feeds I-9 — initiative · claude-fable-5-1 · high · running
+  P-APP-25 Catalog import (running)
+    (P) I-9·Catalog import P-APP-25 — project · claude-fable-5-1 · high · running
+    I-9·P-APP-25·APP-306 Feed reader any format — build · claude-opus-5-5 · high · done · PR #296
+    I-9·P-APP-25·APP-309 Importer block — build · claude-opus-5-5 · medium · running · PR #301 · waits: APP-306 merged, owner go
+    I-9·P-APP-25·APP-309 Importer block·review — review · claude-opus-5-5 · high · running · waits: APP-306 merged, owner go
+I-10 Reporting
+P-APP-30 Close page (spec)
+  P-APP-30·APP-400 Close lock — build · claude-opus-5-5 · high · running · ORPHAN (parent "(P) Close page P-APP-30" archived)
+  P-APP-30·APP-402 Close export·qa — qa · claude-opus-5-5 · high · running · ORPHAN (parent p-app-30-7 missing)
+H Hygiene (running)
+  (H)·Hygiene — hygiene · claude-opus-5-5 · high · running
+  H·APP-371 Offsite test cleanup — build · claude-sonnet-5-5 · low · running · waits: none
+Sessions without an initiative or project folder
+  P-APP-99·APP-500 Lost — build · claude-opus-5-5 · high · running · ORPHAN (parent p-app-99 missing)
+
+2 archived sessions not shown (flow tree --all)

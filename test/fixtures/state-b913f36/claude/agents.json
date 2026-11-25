@@ -1,0 +1,29 @@
+[
+  {
+    "id": "c7030d7e",
+    "cwd": "__ROOT__/repo/.claude/worktrees/demo-1-build",
+    "kind": "background",
+    "sessionId": "6ee9928e-b9bd-4524-a86f-4487374b455e",
+    "name": "I-1·P-DEMO-1·DEMO-1 First issue",
+    "state": "working",
+    "pid": "__ALIVE_PID__"
+  },
+  {
+    "id": "f98adc3d",
+    "cwd": "__ROOT__/repo/.claude/worktrees/i-1",
+    "kind": "background",
+    "sessionId": "a887f9cc-6990-48ee-8b1c-ae003f81094d",
+    "name": "(I)·Demo initiative I-1",
+    "state": "working",
+    "pid": "__DEAD_PID__"
+  },
+  {
+    "id": "310a95e6",
+    "cwd": "__ROOT__/repo/.claude/worktrees/p-demo-1",
+    "kind": "background",
+    "sessionId": "38acaacb-b429-4d08-baf7-b37292a70899",
+    "name": "(P) I-1·First project P-DEMO-1",
+    "state": "working",
+    "pid": "__DEAD_PID__"
+  }
+]

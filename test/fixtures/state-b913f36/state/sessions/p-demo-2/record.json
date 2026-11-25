@@ -1,0 +1,28 @@
+{
+  "slug": "p-demo-2",
+  "jobId": "31e77d30",
+  "sessionId": "61bb8fe5-84cb-4224-9338-391ffb73ff2d",
+  "name": "(P) Second project P-DEMO-2",
+  "role": "project",
+  "parentSlug": null,
+  "parentName": null,
+  "initiative": null,
+  "project": "P-DEMO-2",
+  "issue": null,
+  "model": "claude-opus-5-5",
+  "effort": "high",
+  "playbook": "legacy",
+  "worktree": "p-demo-2",
+  "branch": "dev/demo-2",
+  "pr": null,
+  "status": "archived",
+  "orphanAlertedAt": null,
+  "cleanedAt": "2026-11-20T09:00:00Z",
+  "createdAt": "2026-11-20T09:00:00Z",
+  "branchesLeft": [
+    {
+      "branch": "dev/demo-2",
+      "reason": "not merged"
+    }
+  ]
+}

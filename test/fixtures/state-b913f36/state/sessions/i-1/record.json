@@ -1,0 +1,22 @@
+{
+  "slug": "i-1",
+  "jobId": "f98adc3d",
+  "sessionId": "a887f9cc-6990-48ee-8b1c-ae003f81094d",
+  "name": "(I)·Demo initiative I-1",
+  "role": "initiative",
+  "parentSlug": null,
+  "parentName": null,
+  "initiative": "I-1",
+  "project": null,
+  "issue": null,
+  "model": "claude-opus-5-5",
+  "effort": "high",
+  "playbook": "legacy",
+  "worktree": "i-1",
+  "branch": null,
+  "pr": null,
+  "status": "running",
+  "orphanAlertedAt": null,
+  "cleanedAt": null,
+  "createdAt": "2026-11-20T09:00:00Z"
+}

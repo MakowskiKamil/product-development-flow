@@ -1,0 +1,22 @@
+{
+  "slug": "p-demo-1",
+  "jobId": "310a95e6",
+  "sessionId": "38acaacb-b429-4d08-baf7-b37292a70899",
+  "name": "(P) I-1·First project P-DEMO-1",
+  "role": "project",
+  "parentSlug": "i-1",
+  "parentName": "(I)·Demo initiative I-1",
+  "initiative": "I-1",
+  "project": "P-DEMO-1",
+  "issue": null,
+  "model": "claude-opus-5-5",
+  "effort": "high",
+  "playbook": "legacy",
+  "worktree": "p-demo-1",
+  "branch": null,
+  "pr": null,
+  "status": "archived",
+  "orphanAlertedAt": null,
+  "cleanedAt": null,
+  "createdAt": "2026-11-20T09:00:00Z"
+}

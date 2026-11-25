@@ -1,0 +1,22 @@
+{
+  "slug": "demo-1-build",
+  "jobId": "c7030d7e",
+  "sessionId": "6ee9928e-b9bd-4524-a86f-4487374b455e",
+  "name": "I-1·P-DEMO-1·DEMO-1 First issue",
+  "role": "build",
+  "parentSlug": "p-demo-1",
+  "parentName": "(P) I-1·First project P-DEMO-1",
+  "initiative": "I-1",
+  "project": "P-DEMO-1",
+  "issue": "DEMO-1",
+  "model": "claude-opus-5-5",
+  "effort": "high",
+  "playbook": "legacy",
+  "worktree": "demo-1-build",
+  "branch": "dev/demo-1",
+  "pr": 7,
+  "status": "running",
+  "orphanAlertedAt": null,
+  "cleanedAt": null,
+  "createdAt": "2026-11-20T09:00:00Z"
+}

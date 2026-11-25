@@ -1,0 +1,16 @@
+{
+  "name": "product-development-flow",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Runs parallel Claude Code sessions as a hierarchy that mirrors Linear.",
+  "bin": {
+    "flow": "bin/flow.mjs"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\""
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

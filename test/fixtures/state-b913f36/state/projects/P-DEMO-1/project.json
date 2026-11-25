@@ -1,0 +1,8 @@
+{
+  "id": "P-DEMO-1",
+  "name": "First project",
+  "initiative": "I-1",
+  "phase": "running",
+  "playbook": "legacy",
+  "slug": "p-demo-1"
+}

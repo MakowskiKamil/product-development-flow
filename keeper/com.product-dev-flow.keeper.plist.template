@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Rendered by `node keeper/flow-keeper.mjs --plist`; never edit the rendered copy by hand. -->
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.product-dev-flow.keeper</string>
+  <!-- WHY a login shell: sessions the keeper starts again get the same environment as a
+       terminal (Homebrew PATH, ~/.zprofile), as with the old keeper. Node, claude and git
+       are still absolute paths, so no PATH decides which binary runs. -->
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>-l</string>
+    <string>-c</string>
+    <string>exec "$@"</string>
+    <string>flow-keeper</string>
+    <string>{{node}}</string>
+    <string>{{repo}}/keeper/flow-keeper.mjs</string>
+  </array>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>FLOW_CLAUDE</key><string>{{claude}}</string>
+    <key>FLOW_GIT</key><string>{{git}}</string>
+  </dict>
+  <key>RunAtLoad</key><true/>
+  <key>StartInterval</key><integer>300</integer>
+  <key>ProcessType</key><string>Background</string>
+  <key>StandardOutPath</key><string>{{home}}/Library/Logs/flow-keeper.log</string>
+  <key>StandardErrorPath</key><string>{{home}}/Library/Logs/flow-keeper.log</string>
+</dict>
+</plist>

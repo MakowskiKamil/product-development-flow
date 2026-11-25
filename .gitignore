@@ -1,0 +1,5 @@
+node_modules/
+.gstack/
+.claude/worktrees/
+.DS_Store
+*.log

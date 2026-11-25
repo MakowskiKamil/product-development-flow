@@ -1,0 +1,9 @@
+{
+  "proto": 1,
+  "supervisorPid": "__ALIVE_PID__",
+  "workers": {
+    "c7030d7e": {
+      "pid": "__ALIVE_PID__"
+    }
+  }
+}

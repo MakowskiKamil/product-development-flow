@@ -1,0 +1,56 @@
+# Runs the test suite on every pull request, on main, and by hand
+# (`gh workflow run test --ref main`; setting a secret starts no run by itself).
+# WHY the settings below: the repo takes outside PRs, so the token is read-only,
+# a job cannot hang for hours, and the checkout token is not left in .git/config
+# while repo code runs.
+name: test
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: test-${{ github.ref }}
+  # A newer push to a PR cancels its older run. A running main job is never cancelled;
+  # GitHub keeps one queued run per group, so a newer one can replace a queued one.
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      matrix:
+        # 22 is the engines floor; 24 is an active LTS line.
+        node: [22, 24]
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: ${{ matrix.node }}
+      # The private-terms guard (test/private-terms.test.mjs) reads its list from a file.
+      # The list is the PRIVATE_TERMS secret; fork PRs get no secrets, and without it the
+      # guard is reported skipped. A hand-started run without it is red instead, so the
+      # maintainer's guard run is never a skip buried in a log.
+      # printf, never echo: echo can mangle a multi-line value.
+      - name: private term list
+        env:
+          PRIVATE_TERMS: ${{ secrets.PRIVATE_TERMS }}
+        run: |
+          if [ -n "$PRIVATE_TERMS" ]; then
+            printf '%s\n' "$PRIVATE_TERMS" > "$RUNNER_TEMP/private-terms.txt"
+            printf 'FLOW_PRIVATE_TERMS_FILE=%s\n' "$RUNNER_TEMP/private-terms.txt" >> "$GITHUB_ENV"
+          elif [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ]; then
+            echo "::error::PRIVATE_TERMS secret missing on $GITHUB_REF"
+            exit 1
+          else
+            echo "no PRIVATE_TERMS secret: the private-terms guard will be reported skipped"
+          fi
+      - run: npm test

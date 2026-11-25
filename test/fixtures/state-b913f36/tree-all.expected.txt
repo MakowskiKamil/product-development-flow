@@ -1,0 +1,7 @@
+I-1 Demo initiative
+  (I)·Demo initiative I-1 — initiative · claude-opus-5-5 · high · running
+  P-DEMO-1 First project (running)
+    (P) I-1·First project P-DEMO-1 — project · claude-opus-5-5 · high · archived
+    I-1·P-DEMO-1·DEMO-1 First issue — build · claude-opus-5-5 · high · running · PR #7 · waits: DEMO-0 merged · ORPHAN (parent "(P) I-1·First project P-DEMO-1" archived)
+P-DEMO-2 Second project (intake)
+  (P) Second project P-DEMO-2 — project · claude-opus-5-5 · high · archived

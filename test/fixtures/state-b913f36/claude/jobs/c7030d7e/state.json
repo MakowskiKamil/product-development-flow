@@ -1,0 +1,27 @@
+{
+  "state": "working",
+  "name": "I-1·P-DEMO-1·DEMO-1 First issue",
+  "sessionId": "6ee9928e-b9bd-4524-a86f-4487374b455e",
+  "cwd": "__ROOT__/repo",
+  "worktreePath": "__ROOT__/repo/.claude/worktrees/demo-1-build",
+  "worktreeBranch": "worktree-demo-1-build",
+  "respawnFlags": [
+    "--bg",
+    "-w",
+    "demo-1-build",
+    "-n",
+    "I-1·P-DEMO-1·DEMO-1 First issue",
+    "--remote-control",
+    "I-1·P-DEMO-1·DEMO-1 First issue",
+    "--permission-mode",
+    "auto",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "high",
+    "--append-system-prompt",
+    "1. You are `I-1·P-DEMO-1·DEMO-1 First issue`, role `build`, working on `DEMO-1 First issue` in `I-1 › P-DEMO-1`. Your parent is `(P) I-1·First project P-DEMO-1`.\n2. Read your card at `__ROOT__/state/sessions/demo-1-build/card.md` before anything else; re-read it after a compaction and whenever a message starts `Card updated:`.\n3. Every question, block or result goes to your parent by `SendMessage` to `(P) I-1·First project P-DEMO-1`, first line `[ASK|BLOCKED|DONE|FYI] I-1·P-DEMO-1·DEMO-1 First issue: <one line>`. Never ask the owner directly.",
+    "Read your card at __ROOT__/state/sessions/demo-1-build/card.md and begin."
+  ],
+  "createdAt": "2026-11-21T11:25:15.433Z"
+}
